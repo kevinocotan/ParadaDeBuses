@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Parada de Autobuses</string>
+    <string name="opt1">Añadir Parada de Autobús</string>
+    <string name="opt2">Visualizar Paradas </string>
+    <string name="opt3">Acerca De</string>
+    <string name="opt4">Salir</string>
+    <string name="tituloAgregar">AÑADIR PARADA DE AUTOBÚS</string>
+    <string name="AgregarFoto">Foto</string>
+    <string name="AgregarCoordenadas">Coordenadas</string>
+    <string name="AgregarGuardar">Guardar</string>
+
+
+</resources>

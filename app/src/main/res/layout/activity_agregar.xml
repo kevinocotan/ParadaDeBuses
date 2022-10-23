@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#176B85"
+    tools:context=".Agregar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/tituloAgregar"
+        android:fontFamily="@font/lemonmilk"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:fontFamily="@font/avenir"
+        android:textColorHint="#FFFF"
+        android:textColor="#FFFF"
+        android:minHeight="48dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/foto"
+        android:layout_height="150dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir"
+        android:minHeight="48dp"
+        android:textColorHint="#FFFF"
+        android:textColor="#FFFF"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/txtLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud"
+        android:fontFamily="@font/avenir"
+        android:textColorHint="#FFFF"
+        android:textColor="#FFFF"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/txtLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir"
+        android:hint="Longitud"
+        android:textColor="#FFFF"
+        android:textColorHint="#FFFF"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Descripcion"
+        android:id="@+id/txtDescripcion"
+        android:fontFamily="@font/avenir"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textColor="#FFFF"
+        android:textColorHint="#FFFF"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/AgregarFoto"
+            android:fontFamily="@font/lemonmilk"
+            android:onClick="anexarFoto"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/AgregarCoordenadas"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/lemonmilk"
+            android:onClick="capturarLatLng"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/AgregarGuardar"
+            android:fontFamily="@font/lemonmilk"
+            android:onClick="guardarDatos"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
